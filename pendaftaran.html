@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran - Universitas Negeri Padang</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('gedung unp.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            background: blue;
+            color: white;
+            padding: 15px;
+        }
+        header img {
+            width: 50px;
+            height: 50px;
+            margin-right: 15px;
+        }
+        nav {
+            text-align: center;
+            background: #003366;
+            padding: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #003366;
+            color: white;
+            margin-top: 20px;
+        }
+        h2 {
+            border-bottom: 2px solid blue;
+            padding-bottom: 5px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background: blue;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo unp.png" alt="Logo UNP">
+        <h1>Form Pendaftaran Universitas Negeri Padang 2025</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="pendaftaran.html">Pendaftaran</a>
+        <a href="informasi.html">Informasi</a>
+    </nav>
+
+    <div class="container">
+        <h2>Formulir Pendaftaran</h2>
+        <form>
+            <h3>Biodata Pendaftar</h3>
+            <label for="nomor_pendaftaran">Nomor Pendaftaran:</label>
+            <input type="text" id="nomor_pendaftaran" name="nomor_pendaftaran" required>
+
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <label for="nisn">NISN:</label>
+            <input type="text" id="nisn" name="nisn" required>
+
+            <label for="asal_sekolah">Asal Sekolah:</label>
+            <input type="text" id="asal_sekolah" name="asal_sekolah" required>
+
+            <label for="prodi_diterima">Prodi Diterima:</label>
+            <input type="text" id="prodi_diterima" name="prodi_diterima" required>
+
+            <label for="fakultas">Fakultas:</label>
+            <input type="text" id="fakultas" name="fakultas" required>
+
+            <label for="jenis_kelamin">Jenis Kelamin:</label>
+            <select id="jenis_kelamin" name="jenis_kelamin" required>
+                <option value="Laki-laki">Laki-laki</option>
+                <option value="Perempuan">Perempuan</option>
+            </select>
+
+            <label for="tanggal_lahir">Tanggal Lahir:</label>
+            <input type="date" id="tanggal_lahir" name="tanggal_lahir" required>
+
+            <label for="tempat_lahir">Tempat Lahir:</label>
+            <input type="text" id="tempat_lahir" name="tempat_lahir" required>
+
+            <label for="agama">Agama:</label>
+            <input type="text" id="agama" name="agama" required>
+
+            <label for="provinsi">Provinsi:</label>
+            <input type="text" id="provinsi" name="provinsi" required>
+
+            <label for="kabupaten">Kabupaten:</label>
+            <input type="text" id="kabupaten" name="kabupaten" required>
+
+            <label for="kecamatan">Kecamatan:</label>
+            <input type="text" id="kecamatan" name="kecamatan" required>
+
+            <label for="kelurahan">Kelurahan/Desa:</label>
+            <input type="text" id="kelurahan" name="kelurahan" required>
+
+            <label for="alamat">Alamat:</label>
+            <textarea id="alamat" name="alamat" required></textarea>
+
+            <label for="kode_pos">Kode Pos:</label>
+            <input type="text" id="kode_pos" name="kode_pos" required>
+
+            <label for="no_hp">Nomor Handphone:</label>
+            <input type="text" id="no_hp" name="no_hp" required>
+
+            <label for="email">Alamat Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="jumlah_saudara">Jumlah Saudara:</label>
+            <input type="number" id="jumlah_saudara" name="jumlah_saudara" required>
+
+            <h3>Data Keluarga</h3>
+            <h4>Data Ayah</h4>
+            <label for="nama_ayah">Nama Ayah:</label>
+            <input type="text" id="nama_ayah" name="nama_ayah" required>
+            
+            <label for="pendidikan_ayah">Pendidikan Terakhir:</label>
+            <input type="text" id="pendidikan_ayah" name="pendidikan_ayah" required>
+            
+            <label for="pekerjaan_ayah">Pekerjaan:</label>
+            <input type="text" id="pekerjaan_ayah" name="pekerjaan_ayah" required>
+            
+            <label for="penghasilan_ayah">Penghasilan:</label>
+            <input type="text" id="penghasilan_ayah" name="penghasilan_ayah" required>
+            
+            <label for="no_hp_ayah">Nomor HP Ayah:</label>
+            <input type="text" id="no_hp_ayah" name="no_hp_ayah" required>
+            
+            <h4>Data Ibu</h4>
+            <label for="nama_ibu">Nama Ibu:</label>
+            <input type="text" id="nama_ibu" name="nama_ibu" required>
+            
+            <label for="pendidikan_ibu">Pendidikan Terakhir:</label>
+            <input type="text" id="pendidikan_ibu" name="pendidikan_ibu" required>
+            
+            <label for="pekerjaan_ibu">Pekerjaan:</label>
+            <input type="text" id="pekerjaan_ibu" name="pekerjaan_ibu" required>
+            
+            <label for="penghasilan_ibu">Penghasilan:</label>
+            <input type="text" id="penghasilan_ibu" name="penghasilan_ibu" required>
+            
+            <label for="no_hp_ibu">Nomor HP Ibu:</label>
+            <input type="text" id="no_hp_ibu" name="no_hp_ibu" required>
+            
+            <h4>Data Wali</h4>
+            <label for="nama_wali">Nama Wali:</label>
+            <input type="text" id="nama_wali" name="nama_wali">
+            
+            <label for="pendidikan_wali">Pendidikan Terakhir:</label>
+            <input type="text" id="pendidikan_wali" name="pendidikan_wali">
+            
+            <label for="pekerjaan_wali">Pekerjaan:</label>
+            <input type="text" id="pekerjaan_wali" name="pekerjaan_wali">
+            
+            <label for="penghasilan_wali">Penghasilan:</label>
+            <input type="text" id="penghasilan_wali" name="penghasilan_wali">
+            
+            <label for="no_hp_wali">Nomor HP Wali:</label>
+            <input type="text" id="no_hp_wali" name="no_hp_wali">
+
+            <h3>Status Tempat Tinggal dan Fasilitas</h3>
+            <label for="status_tempat_tinggal">Status Tempat Tinggal:</label>
+            <input type="text" id="status_tempat_tinggal" name="status_tempat_tinggal" required>
+
+            <label for="jumlah_rumah">Jumlah Rumah:</label>
+            <input type="number" id="jumlah_rumah" name="jumlah_rumah" required>
+
+            <label for="luas_bangunan">Luas Bangunan (m²):</label>
+            <input type="number" id="luas_bangunan" name="luas_bangunan" required>
+
+            <label for="luas_tanah">Luas Tanah (m²):</label>
+            <input type="number" id="luas_tanah" name="luas_tanah" required>
+
+            <label for="tagihan_pbb">Tagihan PBB (Rp):</label>
+            <input type="number" id="tagihan_pbb" name="tagihan_pbb" required>
+
+            <label for="mck">MCK (Mandi, Cuci, Kakus):</label>
+            <input type="text" id="mck" name="mck" required>
+
+            <label for="jarak_pusat_kota">Jarak ke Pusat Kota (km):</label>
+            <input type="number" id="jarak_pusat_kota" name="jarak_pusat_kota" required>
+
+            <label for="jumlah_penghuni">Jumlah Penghuni Rumah:</label>
+            <input type="number" id="jumlah_penghuni" name="jumlah_penghuni" required>
+
+            <label for="daerah_idt">Berada di Daerah IDT?</label>
+            <select id="daerah_idt" name="daerah_idt" required>
+                <option value="Ya">Ya</option>
+                <option value="Tidak">Tidak</option>
+            </select>
+
+            <label for="sumber_listrik">Sumber Listrik:</label>
+            <input type="text" id="sumber_listrik" name="sumber_listrik" required>
+
+            <label for="daya_listrik">Daya Listrik (Watt):</label>
+            <input type="number" id="daya_listrik" name="daya_listrik" required>
+
+            <label for="pembayaran_listrik">Rata-rata Pembayaran Listrik Bulanan (Rp):</label>
+            <input type="number" id="pembayaran_listrik" name="pembayaran_listrik" required>
+
+            <label for="sumber_air">Sumber Air:</label>
+            <input type="text" id="sumber_air" name="sumber_air" required>
+
+            <label for="pembayaran_air">Rata-rata Pembayaran Air Bulanan (Rp):</label>
+            <input type="number" id="pembayaran_air" name="pembayaran_air" required>
+
+            <label for="tagihan_internet">Tagihan Internet Bulanan (Rp):</label>
+            <input type="number" id="tagihan_internet" name="tagihan_internet" required>
+
+            <label for="pajak_kendaraan">Pajak Kendaraan Tahunan (Rp):</label>
+            <input type="number" id="pajak_kendaraan" name="pajak_kendaraan" required>
+
+            <label for="jumlah_kendaraan">Jumlah Kendaraan:</label>
+            <input type="number" id="jumlah_kendaraan" name="jumlah_kendaraan" required>
+
+            <label for="jumlah_aset">Jumlah Aset:</label>
+            <input type="number" id="jumlah_aset" name="jumlah_aset" required>
+
+            <button type="submit">Kirim Pendaftaran</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>UNP Website: <a href="https://unp.ac.id/" style="color: white;">https://unp.ac.id/</a></p>
+        <p>Nomor Kontak: (0751) 7058699</p>
+        <p>Alamat: Jl. Prof. Dr. Hamka, Air Tawar, Padang, Sumatera Barat</p>
+    </footer>
+</body>
+</html>
